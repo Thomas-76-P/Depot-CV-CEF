@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Prénom Nom</title>
+  <title>Mon CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style-start.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,27 +18,58 @@
       <div class="header-content">
         <img src="photo.jpg" alt="Photo de profil" class="profile-pic" />
         <div class="infos">
-          <h1>Prénom Nom</h1>
+          <h1>Thomas Perez</h1>
           <h2>Développeur Web et Web Mobile</h2>
           <div class="contact">
-            <a href="mailto:email@example.com">Mail</a> <!--Indiquer les icones pour correspondre au nav-->
-            <a href="tel:0600000000">Téléphone</a>
-            <a href="https://maps.google.com/?q=adresse" target="_blank">Adresse</a>
-            <span>Permis B</span>
+            <a href="mailto:email@example.com" class="icon-mail">Mail</a>
+            <a href="tel:0600000000" class="icon-phone">Téléphone</a>
+            <a href="https://maps.google.com/?q=adresse" target="_blank" class="icon-map">Adresse</a>
+            <span class="icon-car">Permis B</span>
           </div>
         </div>
       </div>
     </header>
-
     <main class="content">
       <aside class="left-panel">
         <section>
           <h3>Compétences</h3>
-          <ul>
-            <li>HTML ★★★★☆</li>
-            <li>CSS ★★★★☆</li>
-            <li>Javascript ★★★☆☆</li>
-            <li>PHP ★★☆☆☆</li>
+          <ul class="skills">
+            <li>HTML
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>CSS
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>JavaScript
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>PHP
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
           </ul>
         </section>
 
@@ -81,35 +114,75 @@
 
         <section>
           <h3>Formations</h3>
-          <ul>
-            <li><strong>Titre Professionnel DWWM Centre Européen de Formation </strong>
-              <small><time datetime="">(2023/2024)</time></small>
+          <ul class="timeline-list">
+            <li>
+              <div class="item-content">
+                <strong>Titre Professionnel DWWM</strong>
+                <small>Centre Européen de Formation</small>
+              </div>
+              <time datetime="2023">2023/2024</time>
             </li>
-            <li><strong>Remise à Niveau - Métiers du Numérique</strong> <small><time datetime=""></time></small> Juin
-              2023 - Septembre 2023</li>
-            <li><strong>Baccalauréat</strong> <small><time datetime=""></time></small> Lycée de la ville (1983)</li>
+            <li>
+              <div class="item-content">
+                <strong>Remise à Niveau - Métiers du Numérique</strong>
+                <small>Lycée de la ville</small>
+              </div>
+              <time datetime="2023-06">Juin 2023 - Septembre 2023</time>
+            </li>
+            <li>
+              <div class="item-content">
+                <strong>Baccalauréat</strong>
+                <small>Lycée de la ville</small>
+              </div>
+              <time datetime="1983">1983</time>
+            </li>
           </ul>
         </section>
 
         <section>
           <h3>Stages</h3>
-          <ul>
-            <li><strong>Gestionnaire de paye</strong> <small><time datetime=""></time></small> Société Truc & Machin
-              (Mars 2022 - Avril 2022)</li>
-            <li><strong>Agent d’accueil</strong> <small><time datetime=""></time></small> Mairie de la ville (Janvier
-              2021 - Février 2021)</li>
+          <ul class="timeline-list">
+            <li>
+              <div class="item-content">
+                <strong>Gestionnaire de paye</strong>
+                <small>Société Truc & Machin</small>
+              </div>
+              <time datetime="2022-03">Mars 2022 - Avril 2022</time>
+            </li>
+            <li>
+              <div class="item-content">
+                <strong>Agent d’accueil</strong>
+                <small>Mairie de la ville</small>
+              </div>
+              <time datetime="2021-01">Janvier 2021 - Février 2021</time>
+            </li>
           </ul>
         </section>
 
         <section>
           <h3>Expérience professionnelle</h3>
-          <ul>
-            <li><strong>Agent d’accueil</strong> <small><time datetime="">(Mars 2021 - Juillet 2021)</time></small>
-              Mairie de la ville </li>
-            <li><strong>Chauffeur - Livreur</strong> <small><time datetime="">(Septembre 2021 - Décembre
-                  2021)</time></small>Transport Nénés & Fils </li>
-            <li><strong>Préparateur de commandes</strong> <small><time datetime="">(Janvier 2000 - Septembre
-                  2000)</time></small>Le slip français </li>
+          <ul class="timeline-list">
+            <li>
+              <div class="item-content">
+                <strong>Agent d’accueil</strong>
+                <small>Mairie de la ville</small>
+              </div>
+              <time datetime="2021-03">Mars 2021 - Juillet 2021</time>
+            </li>
+            <li>
+              <div class="item-content">
+                <strong>Chauffeur - Livreur</strong>
+                <small>Transport Nénés & Fils</small>
+              </div>
+              <time datetime="2021-09">Septembre 2021 - Décembre 2021</time>
+            </li>
+            <li>
+              <div class="item-content">
+                <strong>Préparateur de commandes</strong>
+                <small>Le slip français</small>
+              </div>
+              <time datetime="2000-01">Janvier 2000 - Septembre 2000</time>
+            </li>
           </ul>
         </section>
       </section>
