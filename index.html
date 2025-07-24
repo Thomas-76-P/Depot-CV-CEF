@@ -1,48 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Prénom Nom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style-start.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Prénom et Nom</h1>
-    <h2>Developpeur web et web mobile</h2>
-    <nav></nav>
-    <!--Navigation d'en tête pour le mail et le téléphone ainsi que l'adresse-->
-  </header>
-  <main>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
-    </section>
-  </main>
-  <footer>
-    <!--des navigations avec icone sur favicon-->
-  </footer>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <img src="photo.jpg" alt="Photo de profil" class="profile-pic" />
+        <div class="infos">
+          <h1>Prénom Nom</h1>
+          <h2>Développeur Web et Web Mobile</h2>
+          <div class="contact">
+            <a href="mailto:email@example.com">Mail</a> <!--Indiquer les icones pour correspondre au nav-->
+            <a href="tel:0600000000">Téléphone</a>
+            <a href="https://maps.google.com/?q=adresse" target="_blank">Adresse</a>
+            <span>Permis B</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <aside class="left-panel">
+        <section>
+          <h3>Compétences</h3>
+          <ul>
+            <li>HTML ★★★★☆</li>
+            <li>CSS ★★★★☆</li>
+            <li>Javascript ★★★☆☆</li>
+            <li>PHP ★★☆☆☆</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Langues</h3>
+          <ul>
+            <li>Français – Langue maternelle</li>
+            <li>Anglais – Professionnel</li>
+            <li>Allemand – Notions</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Qualités</h3>
+          <ul>
+            <li>Esprit d'équipe</li>
+            <li>Autonomie</li>
+            <li>Organisation</li>
+            <li>Créativité</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Centres d’intérêt</h3>
+          <ul>
+            <li>Yoga</li>
+            <li>Tennis</li>
+            <li>Écologie</li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="right-panel">
+        <section>
+          <h3>Profil</h3>
+          <p class="profil">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum
+            quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis
+            magni debitis dolorem atque vitae voluptas.
+          </p>
+        </section>
+
+        <section>
+          <h3>Formations</h3>
+          <ul>
+            <li><strong>Titre Professionnel DWWM Centre Européen de Formation </strong>
+              <small><time datetime="">(2023/2024)</time></small>
+            </li>
+            <li><strong>Remise à Niveau - Métiers du Numérique</strong> <small><time datetime=""></time></small> Juin
+              2023 - Septembre 2023</li>
+            <li><strong>Baccalauréat</strong> <small><time datetime=""></time></small> Lycée de la ville (1983)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Stages</h3>
+          <ul>
+            <li><strong>Gestionnaire de paye</strong> <small><time datetime=""></time></small> Société Truc & Machin
+              (Mars 2022 - Avril 2022)</li>
+            <li><strong>Agent d’accueil</strong> <small><time datetime=""></time></small> Mairie de la ville (Janvier
+              2021 - Février 2021)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Expérience professionnelle</h3>
+          <ul>
+            <li><strong>Agent d’accueil</strong> <small><time datetime="">(Mars 2021 - Juillet 2021)</time></small>
+              Mairie de la ville </li>
+            <li><strong>Chauffeur - Livreur</strong> <small><time datetime="">(Septembre 2021 - Décembre
+                  2021)</time></small>Transport Nénés & Fils </li>
+            <li><strong>Préparateur de commandes</strong> <small><time datetime="">(Janvier 2000 - Septembre
+                  2000)</time></small>Le slip français </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <small><time datetime="">Mise à jour le : JJ/MM/AAAA</time></small></p>
+      <div class="footer-icons">
+        <!--Ne oublier de trouve les icones et de rajouter les nav-->
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
